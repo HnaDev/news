@@ -1,0 +1,26 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+.d-flex{
+    display: flex;
+}
+ul.list-featured-post li:hover a,
+ul.list-post li a {
+    text-decoration: none;
+}
+.pb-46{
+    padding-bottom: 46px;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}

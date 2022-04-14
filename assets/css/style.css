@@ -1,0 +1,312 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+}
+#main{
+
+}
+#header{
+    background-color: #23282d;
+    height: 120px;
+    padding-top: 28px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+form#search{
+    position: relative;
+}
+form#search input{
+    width: 248px;
+    background-color: #131619;
+    border: none;
+    outline: none;
+    color: #909090;
+    padding: 9px 42px 9px 15px;
+}
+form#search button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    color: #909090;
+    padding: 9px 14px;
+}
+#header .main-menu{
+    border-right: 10px solid darkviolet;
+}
+#header a , #footer a{
+    text-decoration: none;
+}
+#header h1{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+#footer h1::after ,
+#header h1::after{
+    content: "paper";
+    color: darkviolet;
+}
+#footer h1:hover,
+#header h1:hover{
+    color: #459bcc;
+}
+nav{
+    margin-top: 7px;
+    margin-bottom: 9px;
+    flex-basis: 100%;
+}
+ul.main-menu li a{
+    padding: 6px 20px;
+    color: white ;
+    font-size: 16px;
+    display: block;
+}
+ul.main-menu li:first-child a{
+    padding-left: 0;
+}
+ul.main-menu li:hover a, 
+ul.main-menu li .active{
+    color: #459bcc;
+    text-decoration: none;
+    /* font-size: 16px; */
+}
+/* end header */
+#main-featured-post{
+    margin-top: 34px;
+    margin-bottom: 20px;
+}
+.box .box-head h3{
+    display: inline-block;
+    color: #eee;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #131619;
+    padding: 1px 10px;
+    margin-bottom: 0px;
+}
+.featured-post .box-head {
+    padding-bottom: 20px;
+}
+ul.list-featured-post li{
+    flex-basis: 0;
+}
+ul.list-featured-post li a.post-title{
+    display: block;
+    color: #acaeaf;
+    font-weight: 600;
+    padding-top: 20px;
+    text-transform: uppercase;
+
+}
+ul.list-featured-post li .post-thumb{
+    display: block;
+    overflow: hidden;
+}
+ul.list-featured-post li .post-thumb img{
+    transition: all 0.5s;
+}
+ul.list-featured-post li .post-thumb:hover img{
+    transform: scale(1.05);
+}
+.box .box-body .list-featured-post{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dadada;
+}
+#content{
+    flex: 765px;
+    padding-right: 15px;
+}
+#sidebar{
+    flex: 375px;
+    padding-left: 15px;  
+    padding-right: 15px;
+}
+.box .new-post h3{
+    display: inline-block;
+    background-color: #4db2ec;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1px 15px;
+}
+.box  .new-post {
+    border-bottom: 2px solid #4db2ec;
+    
+}
+.box .list-post li a.post-thumb{
+    padding-right: 30px;
+    flex: 280px;
+}
+.box-body .list-post{
+    padding-top: 31px;
+
+} 
+ul.list-post li{
+    display: flex;
+}
+.more-info .post-title{
+    color: black;
+    font-size: 21px;
+    display: block;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.list-post li:hover .more-info .post-title{
+    color: #4db2ec;
+}
+.post-published .post-author{
+    display: inline-block;
+    font-size: 11px;
+    color: #111111;
+    font-weight: 400;
+    padding: 6px 4px;
+}
+.post-published .post-date{
+    display: inline-block;
+    font-size: 11px;
+    color: #aaaaaa;
+}
+p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #777777;
+    margin-bottom: 0;
+}
+.list-post li{
+    padding-bottom: 40px;
+}
+/* end main-content */
+#sidebar .ads{
+    display: block;
+    padding-bottom: 40px;
+}
+#sidebar .box-head{
+    margin-bottom: 40px;
+}
+#sidebar .box .box-head h3{
+    color: #fcfcfc;
+    background-color: #ff282e;
+}
+#sidebar .box .box-head{
+    border-bottom: 1px solid #ff282e;
+}
+.list-topic li a{
+    position: relative;
+    color: #212121;
+    font-size: 16px;
+    display: block;
+    padding: 6px 0px;
+    font-weight: 400;
+}
+.list-topic li a{
+    text-transform: capitalize;
+}
+.list-topic li a span.num-post{
+    position: absolute;
+    top: 6px;
+    right: 20px;
+}
+.list-topic li .hover-red,
+.list-topic li:hover a
+{
+    color:#ff282e ;
+    text-decoration: none;
+}
+/* end sidebar */
+#footer{
+    background-color: #2e2f30;
+    color: #f6f6f6;
+    padding-bottom: 75px;
+    padding-top: 52px;
+}
+#footer .container .box .box-head h3{
+    background: none;  
+    padding-right: 0;
+    padding-left: 0;  
+}
+#footer .logo-footer{
+    flex: 280px;
+    padding-top: 46px;
+    padding-right: 15px;
+
+}
+#footer h1{
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+}
+#footer .about-us{
+    flex: 680px;
+    padding-right: 180px;
+
+}
+.about-us a{
+    color: #3e7493;
+    font-weight: 600;
+}
+#footer .foolow-us{
+    flex: 180px;
+    padding-left: 15px;
+
+}
+.list-social{
+    display: flex;
+}
+.list-social li{
+    margin-right: 10px;
+}
+.list-social li a{
+    display: block;
+   background-color: #434648;
+   color: #eee;
+   padding: 6px 9px;
+}
+.list-social li:hover a{
+    color: #487d9c;
+}
+/* end footer */
+#main-copyright{
+    background-color: #222527;
+}
+#main-copyright .copyright{
+    color: #ffffff;
+    font-size: 14px;
+}
+#main-copyright .container{
+    padding-top: 11px;
+    padding-bottom: 11px;   
+}
+#footer-menu li a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0px 13px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+#footer-menu li .copyright-ads,
+#footer-menu li:hover a{
+    color: #487d9c;
+}
+
